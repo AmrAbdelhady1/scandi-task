@@ -7,7 +7,7 @@ export default function Home() {
   const {deleteUser} = useStateContext();
 
   return (
-    <main className="min-h-screen">
+    <body className="min-h-screen">
       <div className="flex justify-between px-2 md:px-10 pt-10 pb-5 items-center text-red-500 border-b-2 border-black">
         <h1 className="md:text-3xl font-bold uppercase">Product List</h1>
         <div className="flex gap-4 font-semibold text-xs md:text-xl">
@@ -20,6 +20,6 @@ export default function Home() {
 
       <Productcard />
 
-    </main>
+    </body>
   )
 }

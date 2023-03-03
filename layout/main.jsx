@@ -9,9 +9,9 @@ const Main = ({ children }) => {
                 <link rel="icon" href="/logo.jpg" />
             </Head>
 
-            <main>
+            <body>
                 {children}
-            </main>
+            </body>
 
         </>
     )
