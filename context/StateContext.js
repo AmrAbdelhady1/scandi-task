@@ -31,7 +31,7 @@ export const StateContext = ({ children }) => {
 
     }, [])
 
-    const deleteUser = async () => {
+    const delete_checkbox = async () => {
         try {
             axios.post(`http://localhost/api/deleteusers.php`, {
                 productid: deletedIds,
@@ -102,7 +102,7 @@ export const StateContext = ({ children }) => {
                 setLenght,
                 setHWidth,
                 addProduct,
-                deleteUser
+                delete_checkbox
             }}
         >
             {children}

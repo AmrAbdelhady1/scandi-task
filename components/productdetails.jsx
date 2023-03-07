@@ -6,7 +6,7 @@ const Productdetails = () => {
 
     return (
         <div className='p-10 items-center flex justify-center'>
-            <form className="lg:w-1/2 w-full rounded-lg bg-white p-6 shadow-lg" onSubmit={addProduct}>
+            <form id='product_form' className="lg:w-1/2 w-full rounded-lg bg-white p-6 shadow-lg" onSubmit={addProduct}>
                 <div className="relative z-0 w-full mb-6 ">
                     <input type="text" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required onChange={(e => setSku(e.target.value))} />
                     <label className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">SKU</label>
@@ -32,7 +32,7 @@ const Productdetails = () => {
                     </div>
                     : productType === "Book" ?
                         <div className="relative z-0 w-full mb-6 ">
-                            <input type="text" pattern="\d+" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required onChange={(e => setProductDesc("Weight: "+e.target.value+"KG"))} />
+                            <input type="text" pattern="\d+" className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required onChange={(e => setProductDesc("Weight: " + e.target.value + " KG"))} />
                             <label className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Please, provide weight ( Weight (KG) )</label>
                         </div>
                         : productType === "Furniture" &&
