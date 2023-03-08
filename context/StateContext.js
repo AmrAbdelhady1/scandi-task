@@ -22,7 +22,7 @@ export const StateContext = ({ children }) => {
 
     useEffect(() => {
         try {
-            axios.get(`http://localhost/api/users.php`)
+            axios.get(`https://scandbprol.000webhostapp.com/users.php`)
                 .then(res => {
                     setProductData(res.data.products);
                     setIsChecked(Array(res.data.products?.length).fill(false));
@@ -33,7 +33,7 @@ export const StateContext = ({ children }) => {
 
     const delete_checkbox = async () => {
         try {
-            axios.post(`http://localhost/api/deleteusers.php`, {
+            axios.post(`https://scandbprol.000webhostapp.com/deleteusers.php`, {
                 productid: deletedIds,
             })
             setProductData(prevProducts => prevProducts.filter(product => !deletedIds?.includes(product.id)));
@@ -68,7 +68,7 @@ export const StateContext = ({ children }) => {
         const dataapi = { sku, name, price, productType, productDesc };
         try {
             e.preventDefault();
-            await axios.post(`http://localhost/api/addusers.php`, {
+            await axios.post(`https://scandbprol.000webhostapp.com/addusers.php`, {
                 sku: dataapi.sku,
                 name: dataapi.name,
                 price: dataapi.price,

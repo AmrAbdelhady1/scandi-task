@@ -4,7 +4,7 @@ import { Productdetails } from '@/components'
 
 const Addproduct = () => {
   return (
-    <main>
+    <div>
 
       <div className="flex justify-between px-4 md:px-10 pt-10 pb-5 items-center text-red-500 border-b-2 border-black">
         <h1 className="md:text-3xl font-bold uppercase">Product add</h1>
@@ -15,7 +15,7 @@ const Addproduct = () => {
 
       <Productdetails />
 
-    </main>
+    </div>
   )
 }
 

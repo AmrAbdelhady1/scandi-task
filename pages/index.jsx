@@ -14,7 +14,7 @@ export default function Home() {
           <Link href='/addproduct'>
             <button className="md:py-3 py-1 px-2 md:px-8 rounded-full border-2 border-red-500 hover:text-white hover:bg-red-500 hover:underline">ADD</button>
           </Link>
-          <button className="md:py-3 py-1 px-2 md:px-8 rounded-full border-2 border-red-500 hover:text-white hover:bg-red-500 hover:underline" class="delete-checkbox" onClick={delete_checkbox}>MASS DELETE</button>
+          <button className="md:py-3 py-1 px-2 md:px-8 rounded-full border-2 border-red-500 hover:text-white hover:bg-red-500 hover:underline" onClick={delete_checkbox}>MASS DELETE</button>
         </div>
       </div>
 
